@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body, html{
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #283236;
+}
+#header{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 4vw;
+    width: 100vw;
+    display: inline-block;
+    background-color: #e5d496;
+}
+#header h1{
+    display: inline;
+    float: none;
+
+}
+#header a{
+    color: #212121;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.icon {
+    min-width: 32px;
+    min-height: 32px;
+    width: 6vw;
+    height: 6vw;
+
+}
+#header fieldset:hover  .icon{
+    height: 4.5vw;
+    margin-left:1.5vw;
+    width: 4.5vw;
+}
+h1, legend{
+    font-family: Roboto Mono;
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+#header fieldset {
+    display: inline;
+    padding: none;
+    margin-right: 2vw;
+    float: right;
+    border:none
+}
+.alt{
+    font-family: Roboto Mono;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+
