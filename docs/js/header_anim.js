@@ -26,7 +26,7 @@ function frame() {
         elem.innerHTML = "Valdotorium"
         //add the icons to the header
         if (frm > 620){
-            projectsIcon.src = "svg/apple-shortcuts.svg"
+            projectsIcon.src = "svg/games.svg"
         }
         if (frm > 600){
             repoIcon.src = "svg/repository.svg"
