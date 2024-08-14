@@ -16,6 +16,7 @@ body, html{
     display: inline-block;
     background-color: #e5d496;
 }
+
 #header h1{
     display: inline;
     float: none;
@@ -34,15 +35,18 @@ body, html{
 
 }
 #header fieldset:hover  .icon{
-    height: 4.5vw;
-    margin-left:1.5vw;
-    width: 4.5vw;
+    height: 4vw;
+    width: 4vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    animation: minimize 250ms ease-in-out;
 }
 h1, legend{
     font-family: Roboto Mono;
     margin: 0;
     padding: 0;
-    font-size: 8vh;
+    font-size: 6vw;
     margin-left: 2vw;
     text-align: center;
 }
@@ -56,8 +60,8 @@ h1, legend{
 }
 .alt{
     font-family: Roboto Mono;
-    font-size: 3vh;
-    text-align: left;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 #about {
@@ -81,8 +85,8 @@ ul {
 }
 
 details{
-    margin: 2vw;
-    transition: max-height 800ms ease-out; /* Animate the change */
+    margin-top: 2vw;
+    transition: max-height 1200ms ease-out; /* Animate the change */
     padding: 1.5vw;
     border-radius: 1.5vw;
     box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 8px;
@@ -91,7 +95,6 @@ details{
     font-size: 4.5vh;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 5px;
 
 
     max-height: 10rem; /* Set a max-height value just enough to show the summary content */
@@ -111,6 +114,11 @@ details p {
     font-size:2.4vh
 }
 
+em{
+    font-size: 2vh;
+}
+
+
 details[open] summary ~ * {
     animation: sweep .5s ease-in-out;
 }
@@ -118,7 +126,7 @@ details[open] summary ~ * {
 details[open]{
     max-height: 200vh; /* Show the rest of the content */
     overflow: hidden; /* Hide the rest of the content */
-    animation: appear 800ms ease-in-out; 
+    animation: appear 1200ms ease-in-out; 
 }   
 
 @keyframes sweep {
@@ -133,6 +141,11 @@ details[open]{
 @keyframes buildUp {
     0% {margin-top: 100vh; opacity:0}
     100% {margin-top: 5vw; opacity:1}
+  
+}
+@keyframes minimize {
+    0% {height: 6vw; width: 6vw; margin-left: 0vw; margin-right: 0vw;}
+    100% {height: 4vw; width: 4vw; margin-left: 1vw; margin-right: 1vw;}
   
 }
 
