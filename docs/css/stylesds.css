@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body, html{
+    overflow: hidden;
+    overflow-y: scroll;
+    max-width: 100%;
+    background-color: #283236;
+    text-align: center;
+    font-family: Roboto Mono;
+    border-radius: 1.5vw;
+    background-color: #9ab
+}
+a{
+    display:block;
+    padding: 2vw;
+    font-family: Roboto Mono;
+    font-size: 3vw;
+    color: #6580a0;
+    border-radius: 1.5vw;
+    background-color: #b3d8dd;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    margin-left: 0px;
+
+}

@@ -11,7 +11,7 @@ body, html{
 #header{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    margin-left: 0px;
     margin-right: 0px;
-    padding-top: 4vw;
+    padding-top: 4vmin;
     width: 100vw;
     display: inline-block;
     background-color: #e5d496;
@@ -46,7 +46,7 @@ h1, legend{
     font-family: Roboto Mono;
     margin: 0;
     padding: 0;
-    font-size: 6vw;
+    font-size: 6vmin;
     margin-left: 2vw;
     text-align: center;
 }
@@ -60,7 +60,7 @@ h1, legend{
 }
 .alt{
     font-family: Roboto Mono;
-    font-size: 1.5vw;
+    font-size: 2vmin;
     text-align: center;
 }
 
@@ -69,8 +69,8 @@ h1, legend{
     animation: buildUp 1000ms ease-in-out; 
 }
 .tinyicon {
-    width: 4vw;
-    height: 4vw;
+    width: 6vh;
+    height: 6vh;
     margin-right: 1vw;
     margin-left: 1vw;
 }
@@ -92,7 +92,7 @@ details{
     box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 8px;
     background-color: #b3d8dd;
     font-family: Roboto Mono;
-    font-size: 4.5vh;
+    font-size: 4vmin;
     text-align: center;
     box-sizing: border-box;
 
@@ -111,20 +111,24 @@ details h5 {
     display: inline;
 }
 details p {
-    font-size:2.4vh
+    font-size:3vmin
 }
 
 em{
-    font-size: 2vh;
+    font-size: 2.25vmin;
 }
 
-
+figure {
+    width: 80vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
 details[open] summary ~ * {
     animation: sweep .5s ease-in-out;
 }
   
 details[open]{
-    max-height: 200vh; /* Show the rest of the content */
+    max-height: 200vmax; /* Show the rest of the content */
     overflow: hidden; /* Hide the rest of the content */
     animation: appear 1200ms ease-in-out; 
 }   
@@ -147,6 +151,37 @@ details[open]{
     0% {height: 6vw; width: 6vw; margin-left: 0vw; margin-right: 0vw;}
     100% {height: 4vw; width: 4vw; margin-left: 1vw; margin-right: 1vw;}
   
+}
+
+.kleingedrucktes{
+    font-size: 1.5vmin;
+    font-family: Roboto Mono;
+    color: #999;
+    text-align: center;
+}
+a{
+    color: #6580a0;
+
+    text-decoration: none;
+}
+
+details a:hover{
+    box-shadow: rgba(7, 7, 7, 0.2) 0px 2px 6px;
+}
+.kleingedrucktes a:hover{
+    box-shadow: rgba(229, 229, 229, 0.2) 0px 1px 4px;
+}
+a:hover{
+    text-decoration: underline;
+
+}
+#emh{
+    font-size: 3.5vmin;
+    font-family: Roboto Mono;
+}
+
+details a {
+    font-size:3vmin
 }
 
 

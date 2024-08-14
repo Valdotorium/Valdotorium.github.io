@@ -11,12 +11,12 @@ function frame() {
   if (frm == 2147483647) {
     clearInterval(id);
   } else {
-    if (frm < 401){
+    if (frm < 201){
         frm++
         //make one character of the string "Valdotorium" appear every 40 frames
-        elem.innerHTML = "Valdotorium".slice(0, Math.ceil(frm/40));  // only show first goalLen characters, then repeat the string
+        elem.innerHTML = "Valdotorium".slice(0, Math.ceil(frm/20));  // only show first goalLen characters, then repeat the string
         //put a random ASCII character at the end
-        if (frm < 400){
+        if (frm < 200){
             var randomAscii = String.fromCharCode(Math.floor(Math.random() * 256));
             elem.innerHTML += randomAscii;
         }
@@ -25,13 +25,13 @@ function frame() {
         frm++
         elem.innerHTML = "Valdotorium"
         //add the icons to the header
-        if (frm > 620){
+        if (frm > 200+Math.floor(Math.random() * 22)){
             projectsIcon.src = "svg/games.svg"
         }
-        if (frm > 600){
+        if (frm > 200+Math.floor(Math.random() * 80)){
             repoIcon.src = "svg/repository.svg"
         } 
-        if (frm > 680){
+        if (frm > 200+Math.floor(Math.random() * 38)){
             gitIcon.src = "img/github-mark.png"
         }
 
