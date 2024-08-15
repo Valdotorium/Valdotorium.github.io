@@ -69,88 +69,6 @@ li div h5{
     padding-right: 5vh;
     display: inline;
 }
-@media only screen and (max-width: 700px) {
-    /* For mobile phones: */
-    #header div{
-        display: inline-block;
-        margin-bottom: 1vw;
-    }
-    .alt{
-        display: none;
-    }
-    #headerIcons{
-        width:100vw;
-        display: inline-block;
-        align-items: center;
-    
-    }
-    #header fieldset {
-        display: inline;
-        float: none;
-        padding-left: 6vmin;
-
-    }
-    #header h1{
-        display: inline-block;
-        width:100vw;
-    }
-    #header{
-        text-align: center;
-        align-content: center;
-    }
-    #header fieldset:hover  .icon{
-        height: 6vmin;
-        width:6vmin;
-        margin-left: 1vmin;
-        margin-right: 1vmin;
-    
-        animation: none
-    }
-    li div h5{
-        float: right;
-        margin-right: 5vw;
-    }
-    li div img{
-        float: left;
-        margin-left: 5vw;
-    }
-    li div p{
-        display: inline-block;
-        
-    }
-
-  }
-  @media only screen and (max-width: 400px) {
-    /* For mobile phones: */
-    #header div{
-        display: none;
-    }
-    .alt{
-        display: none;
-    }
-    #headerIcons{
-        width:100vw;
-        display: inline-block;
-        align-items: center;
-    
-    }
-    #header h1{
-        display: inline-block;
-        width:100vw;
-        font-size: 7vmin;
-    }
-    #header{
-        text-align: center;
-        align-content: center;
-    }
-    li div h5{
-        display: none;
-    }
-    li div img{
-        float: none;
-    }
-
-  }
 
 .alt{
     font-family: Roboto Mono;
@@ -179,9 +97,9 @@ ul {
 }
 
 details{
-    margin-top: 2vw;
+    margin-top: 3vw;
     transition: max-height 1200ms ease-out; /* Animate the change */
-    padding: 1.5vw;
+    padding: 2vw;
     border-radius: 1.5vw;
     box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 8px;
     background-color: #b3d8dd;
@@ -289,3 +207,92 @@ details a {
     100% {margin-top: 5vw; opacity:1}
   
 }
+@media only screen and (min-height: 122vw) {
+    /* For mobile phones: */
+    #header div{
+        display: inline-block;
+        margin-bottom: 1vw;
+    }
+    .alt{
+        display: none;
+    }
+    #headerIcons{
+        width:100vw;
+        display: inline-block;
+        align-items: center;
+    
+    }
+    #header fieldset {
+        display: inline;
+        float: none;
+        padding-left: 6vmin;
+
+    }
+    #header h1{
+        display: inline-block;
+        width:100vw;
+    }
+    #header{
+        text-align: center;
+        align-content: center;
+    }
+    #header fieldset:hover  .icon{
+        height: 6vmin;
+        width:6vmin;
+        margin-left: 1vmin;
+        margin-right: 1vmin;
+    
+        animation: none
+    }
+    li div h5{
+        float: right;
+        margin-right: 5vw;
+    }
+    li div img{
+        float: left;
+        margin-left: 5vw;
+    }
+    li div p{
+        display: inline-block;
+        
+    }
+    details{
+        padding: 2.5vh;
+        margin-top: 3.5vh;
+    }
+  }
+  @media only screen and (min-height: 268vw) {
+    /* For mobile phones: */
+    #header div{
+        display: none;
+    }
+    .alt{
+        display: none;
+    }
+    #headerIcons{
+        width:100vw;
+        display: inline-block;
+        align-items: center;
+    
+    }
+    #header h1{
+        display: inline-block;
+        width:100vw;
+        font-size: 7vmin;
+    }
+    #header{
+        text-align: center;
+        align-content: center;
+    }
+    li div h5{
+        display: none;
+    }
+    li div img{
+        float: none;
+    }
+    details{
+        padding: 2.5vh;
+        margin-top: 3.5vh;
+    }
+
+  }
