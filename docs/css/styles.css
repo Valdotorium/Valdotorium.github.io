@@ -7,12 +7,17 @@ body, html{
     max-height: 100%;
     max-width: 100%;
     background-color: #283236;
+    min-width: 250px;
+    min-height: 250px;
+
 }
 #header{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    margin-left: 0px;
     margin-right: 0px;
     padding-top: 4vmin;
     width: 100vw;
+    min-width: 250px;
+    max-height:35vh;
     display: inline-block;
     background-color: #e5d496;
 }
@@ -28,17 +33,15 @@ body, html{
     font-size: 4vh;
 }
 .icon {
-    min-width: 32px;
-    min-height: 32px;
-    width: 6vw;
-    height: 6vw;
+    width: 8vmin;
+    height: 8vmin;
 
 }
 #header fieldset:hover  .icon{
-    height: 4vw;
-    width: 4vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    height: 5vmin;
+    width: 5vmin;
+    margin-left: 1.5vmin;
+    margin-right: 1.5vmin;
 
     animation: minimize 250ms ease-in-out;
 }
@@ -50,7 +53,10 @@ h1, legend{
     margin-left: 2vw;
     text-align: center;
 }
+#headerIcons{
+    display: inline;
 
+}
 #header fieldset {
     display: inline;
     padding: none;
@@ -58,6 +64,94 @@ h1, legend{
     float: right;
     border:none
 }
+li div h5{
+    padding-left: 5vh;
+    padding-right: 5vh;
+    display: inline;
+}
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    #header div{
+        display: inline-block;
+        margin-bottom: 1vw;
+    }
+    .alt{
+        display: none;
+    }
+    #headerIcons{
+        width:100vw;
+        display: inline-block;
+        align-items: center;
+    
+    }
+    #header fieldset {
+        display: inline;
+        float: none;
+        padding-left: 6vmin;
+
+    }
+    #header h1{
+        display: inline-block;
+        width:100vw;
+    }
+    #header{
+        text-align: center;
+        align-content: center;
+    }
+    #header fieldset:hover  .icon{
+        height: 6vmin;
+        width:6vmin;
+        margin-left: 1vmin;
+        margin-right: 1vmin;
+    
+        animation: none
+    }
+    li div h5{
+        float: right;
+        margin-right: 5vw;
+    }
+    li div img{
+        float: left;
+        margin-left: 5vw;
+    }
+    li div p{
+        display: inline-block;
+        
+    }
+
+  }
+  @media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+    #header div{
+        display: none;
+    }
+    .alt{
+        display: none;
+    }
+    #headerIcons{
+        width:100vw;
+        display: inline-block;
+        align-items: center;
+    
+    }
+    #header h1{
+        display: inline-block;
+        width:100vw;
+        font-size: 7vmin;
+    }
+    #header{
+        text-align: center;
+        align-content: center;
+    }
+    li div h5{
+        display: none;
+    }
+    li div img{
+        float: none;
+    }
+
+  }
+
 .alt{
     font-family: Roboto Mono;
     font-size: 2vmin;
@@ -69,8 +163,8 @@ h1, legend{
     animation: buildUp 1000ms ease-in-out; 
 }
 .tinyicon {
-    width: 6vh;
-    height: 6vh;
+    width: 9vmin;
+    height: 9vmin;
     margin-right: 1vw;
     margin-left: 1vw;
 }
@@ -148,13 +242,13 @@ details[open]{
   
 }
 @keyframes minimize {
-    0% {height: 6vw; width: 6vw; margin-left: 0vw; margin-right: 0vw;}
-    100% {height: 4vw; width: 4vw; margin-left: 1vw; margin-right: 1vw;}
+    0% {height: 8vmin; width: 8vmin; margin-left: 0vmin; margin-right: 0vmin;}
+    100% {height: 5vmin; width: 5vmin; margin-left: 1.5vmin; margin-right: 1.5vmin;}
   
 }
 
 .kleingedrucktes{
-    font-size: 1.5vmin;
+    font-size: 1vmax;
     font-family: Roboto Mono;
     color: #999;
     text-align: center;
@@ -177,6 +271,7 @@ a:hover{
 }
 #emh{
     font-size: 3.5vmin;
+    text-decoration: underline;
     font-family: Roboto Mono;
 }
 
@@ -184,4 +279,13 @@ details a {
     font-size:3vmin
 }
 
-
+#footer {
+    margin: 1vw;
+    animation: footerBuildUp 2000ms ease-in-out; 
+}
+@keyframes footerBuildUp {
+    0% {margin-top: 17.5vh; opacity:0}
+    50%{margin-top: 17.5vh; opacity:0}
+    100% {margin-top: 5vw; opacity:1}
+  
+}
