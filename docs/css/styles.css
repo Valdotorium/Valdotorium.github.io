@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
+iframe{
+    width: 60vw;
+    height: 20vw
+    }
 body, html{
     overflow: hidden;
     overflow-y: scroll;
@@ -145,25 +148,6 @@ details[open]{
     animation: appear 1200ms ease-in-out; 
 }   
 
-@keyframes sweep {
-    0%    {opacity: 0; margin-left: -15px}
-    100%  {opacity: 1; margin-left: 0px}
-  }
-@keyframes appear {
-    0% {opacity: 1;}
-    100% {opacity: 1;max-height:200vh}
-  
-}
-@keyframes buildUp {
-    0% {margin-top: 100vh; opacity:0}
-    100% {margin-top: 5vw; opacity:1}
-  
-}
-@keyframes minimize {
-    0% {height: 8vmin; width: 8vmin; margin-left: 0vmin; margin-right: 0vmin;}
-    100% {height: 5vmin; width: 5vmin; margin-left: 1.5vmin; margin-right: 1.5vmin;}
-  
-}
 
 .kleingedrucktes{
     font-size: 1vmax;
@@ -200,6 +184,26 @@ details a {
 #footer {
     margin: 1vw;
     animation: footerBuildUp 2000ms ease-in-out; 
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -15px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+@keyframes appear {
+    0% {opacity: 1;}
+    100% {opacity: 1;max-height:200vh}
+  
+}
+@keyframes buildUp {
+    0% {margin-top: 100vh; opacity:0}
+    100% {margin-top: 5vw; opacity:1}
+  
+}
+@keyframes minimize {
+    0% {height: 8vmin; width: 8vmin; margin-left: 0vmin; margin-right: 0vmin;}
+    100% {height: 5vmin; width: 5vmin; margin-left: 1.5vmin; margin-right: 1.5vmin;}
+  
 }
 @keyframes footerBuildUp {
     0% {margin-top: 17.5vh; opacity:0}
